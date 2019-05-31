@@ -27,10 +27,8 @@ Este mismo post lo estoy redactando con [https://prose.io](https://prose.io) el 
 
 Una vez accedido a tu listado de repositorios he seleccionado el de aletsh.github.io.
 
+![mudanza-wordpress-jekyll.PNG]({{site.baseurl}}/img/mudanza-wordpress-jekyll.PNG)
+
+
 ## Estilo mas sencillo.
 El estilo de este theme esta bastante bien tanto para escritorio como para leer los posts desde el movil. He averiguado que existen bastantes autores que estan empleando este theme y al parecer esta siendo actualizado por varios contribuyentes, asi que me gusto la idea de poder usarlo y migrar de forma definitiva.
-
-
-
-
-
