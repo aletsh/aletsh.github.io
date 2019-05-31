@@ -29,6 +29,7 @@ Una vez accedido a tu listado de repositorios he seleccionado el de aletsh.githu
 
 ![mudanza-wordpress-jekyll.PNG]({{site.baseurl}}/img/mudanza-wordpress-jekyll.PNG)
 
+Tambien puedes crear el posts en un fichero estatico en tu equipo pero hay que tener en cuenta que hay que redactar con _Markdown_. Existe un tutorial bastante gracioso para aprender, solo hay que acceder aqui:  [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
 
 ## Estilo mas sencillo.
 El estilo de este theme esta bastante bien tanto para escritorio como para leer los posts desde el movil. He averiguado que existen bastantes autores que estan empleando este theme y al parecer esta siendo actualizado por varios contribuyentes, asi que me gusto la idea de poder usarlo y migrar de forma definitiva.
