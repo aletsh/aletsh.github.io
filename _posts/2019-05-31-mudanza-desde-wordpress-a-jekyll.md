@@ -13,9 +13,9 @@ Para practicar es muy bonito, configurar el rancher, configurar los contenedores
 Por esos y otros motivos decido realizar la migración de Wordpresss a Jekyll ya que carece de base de datos y de servidor php. Y para hacer un sitio Web con algunas páginas estáticas y otra más que le llamaremos blog, sobra ^^.
 
 ## Objetivos sobre la mudanza
-* Quitar el blog de mi maquina.
+* Quitar el blog de mi máquina.
 * Simplificar la manera de hacer los posts.
-* Estilo mas sencillo.
+* Estilo más sencillo.
 
 ## Quitar el blog de mi maquina.
 Para ello he tenido que instalar un plugin llamado [Jekyll Exporter](https://wordpress.org/plugins/jekyll-exporter/ "Jekyll Exporter"). Lo he instalado y al pulsar sobre el plugin en muy poco tiempo me ha exportado todos los posts con sus respectivos adjuntos en un paquete zip.
@@ -40,7 +40,7 @@ El editor de textos _wyswyg_ es muy simple y te redacta en _markdown_.
 
 Si quieres aprender markdown en 5 minutos existe un tutorial bastante gracioso para aprender, solo hay que acceder aquí:  [https://www.markdowntutorial.com/](https://www.markdowntutorial.com/)
 
-## Estilo mas sencillo.
+## Estilo más sencillo.
 El estilo de este theme está bastante bien tanto para leer desde un ordenador de escritorio o el movil. 
 
 He averiguado que existen bastantes autores que están empleando este theme y al parecer está siendo actualizado por varios contribuyentes, asi que me gustó la idea de poder usarlo y migrar de forma definitiva.
