@@ -16,6 +16,7 @@ Por esos y otros motivos decido realizar la migración de Wordpresss a Jekyll ya
 * Quitar el blog de mi máquina.
 * Simplificar la manera de hacer los posts.
 * Estilo más sencillo.
+* Añadir dominio propio para github pages
 
 ## Quitar el blog de mi maquina.
 Para ello he tenido que instalar un plugin llamado [Jekyll Exporter](https://wordpress.org/plugins/jekyll-exporter/ "Jekyll Exporter"). Lo he instalado y al pulsar sobre el plugin en muy poco tiempo me ha exportado todos los posts con sus respectivos adjuntos en un paquete zip.
@@ -26,8 +27,7 @@ Dentro del archivo comprimido te crea un directorio con el nombre de _posts_ el 
 
 Tardé, 2 minutos.
 
-### Falta por hacer
-* Redireccionar mi dominio al nuevo blog
+
 
 ## Simplificar la manera de hacer los posts
 Este mismo post lo estoy redactando con Prose ([https://prose.io](https://prose.io)) el cual te pide autorizacion para leer tu repositorio de _gitHub_.
@@ -44,6 +44,17 @@ Si quieres aprender markdown en 5 minutos existe un tutorial bastante gracioso p
 El estilo de este theme está bastante bien tanto para leer desde un ordenador de escritorio o el movil. 
 
 He averiguado que existen bastantes autores que están empleando este theme y al parecer está siendo actualizado por varios contribuyentes, asi que me gustó la idea de poder usarlo y migrar de forma definitiva.
+
+## Añadir dominio propio para github pages
+Primero hay que entrar en Github, ir al repositorio de vuestro blog pulsar en la opcion "settings" que esta a la derecha. Buscar la sección GitHub Pages y añadir el dominio.
+
+Luego hay que ir al parking de dominios eliminar vuestro registro "A" y añadir los siguientes:
+* 185.199.108.153
+* 185.199.109.153
+* 185.199.110.153
+* 185.199.111.153
+
+Dependiendo de la ISP este cambio puede tardar 24/48h. A mi me ha funcionado al momento.
 
 
 Este blog, supongo que seguirá teniendo telas de araña pero la migración me servirá para poder; apagar el servidor y asi ahorrar electricidad o emplearlo para otros fines.
