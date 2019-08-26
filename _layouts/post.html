@@ -32,10 +32,11 @@ layout: base
       {% endif %}
 
       <article role="main" class="blog-post">
-        {{ content }}
-        {% include advertisements.html %}
+        {{ content }}        
       </article>
-
+      
+      {% include advertisements.html %}
+      
       {% if page.tags.size > 0 %}
         <div class="blog-tags">
           Tags:
