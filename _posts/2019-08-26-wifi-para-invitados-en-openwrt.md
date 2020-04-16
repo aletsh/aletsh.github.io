@@ -1,6 +1,7 @@
 ---
 layout: post
 published: true
+lang: es
 title: Wifi para invitados en OpenWrt
 subtitle: Configuracion para habilitar una red Wifi para invitados en 3 comodos pasos.
 ---
