@@ -31,7 +31,8 @@ Seleccionar EFI-BOOT. Si aparecen dos seleccionar el que este mas a la izquierda
 Esperar a que arranque Ubuntu e  inslatarlo con el asistente, no es difícil.
 
 Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para `/home` seleccionarla tambien. Ambas en formato ext4.
-Existe un video que explica bastante bien los puntos anteriores: [https://www.youtube.com/watch?v=o30qsxv1CsM](https://www.youtube.com/watch?v=o30qsxv1CsM)
+Existe un video que explica bastante bien los puntos anteriores: [thttps://www.youtube.com/watch?v=o30qsxv1CsM](https://www.youtube.com/watch?v=o30qsxv1CsM)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o30qsxv1CsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Instalar Webcam facetimehd en Ubuntu 20.04
 
