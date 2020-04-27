@@ -7,8 +7,8 @@ subtitle: Sencillos pasos para instalar ubuntu 20.04 en el MacBook Air sin perde
 Lista de la compra:
 1. Crear particiones necesarias
 2. Crear USB de arranque e instalar Ubuntu 20.04
-3. Instalar Webcam facetimehd en Ubuntu 20.04
-4. Combinacion de teclas mac en Ubuntu 20.04
+3. Teclado de mac en Ubuntu 20.04
+4. Trackpad de mac en Ubuntu 20.04
 
 ## Crear particiones necesarias
 Crear particion con el disk utility en macOS para `swap` de 10gb por lo menos si tienes 8GB de ram y crear particion para "/", yo lo hice de 20 GB. Tarda bastante en aplicar.
@@ -56,3 +56,16 @@ Como se puede observar en la imagen he duplicado para todos los comandos lo mism
 
 Si alguien tiene una forma de tener la combinacion de mac en ubuntu más facil, que me lo diga por twitter (@aletsh), esta es la que encontré recientemente. Si encuentro una mejor la publico.
 
+## Trackpad de mac en Ubuntu 20.04
+Instalar tweak:
+``` sudo apt install tweak ```
+
+### Activar boton derecho del trackpad del macbook air en Ubuntu 20.04
+Abrir `retoques`:
+En el menu de la izquierda seleccionar la opcion Teclado y Raton.
+A la derecha ir a la opcion `Emulación de la pulsación con el ratón`:
+Seleccionar: Area.
+![tweak-01-alejandroguerrero-es]({{site.baseurl}}/img/tweak-01-alejandroguerrero-es.png)
+
+### Activar gestos naturales como en macOS en Ubuntu 20.04
+`Todo: investigando...`
