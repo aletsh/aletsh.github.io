@@ -4,33 +4,35 @@ published: true
 title: Instalar Ubuntu 20.04 en Macbook air (con dual boot)
 subtitle: Sencillos pasos para instalar ubuntu 20.04 en el MacBook Air sin perder macOS
 ---
-Lista de la compra:
+Lista de anotaciones para tener Ubuntu en el Macbook air:
 1. Crear particiones necesarias
 2. Crear USB de arranque e instalar Ubuntu 20.04
 3. Teclado de mac en Ubuntu 20.04
 4. Trackpad de mac en Ubuntu 20.04
 
 ## Crear particiones necesarias
-Crear particion con el disk utility en macOS para `swap` de 10gb por lo menos si tienes 8GB de ram y crear particion para "/", yo lo hice de 20 GB. Tarda bastante en aplicar.
+Crear particion con el disk utility en macOS para `swap` de 10gb por lo menos si tienes 8GB de ram y crear particion para `/`, yo lo hice de 20 GB. Tarda bastante en aplicar.
 
-Opcionalmente, puedes crear una particion para /home.
+Opcionalmente, puedes crear una particion para `/home`.
 
 ## Crear USB de arranque e instalar Ubuntu 20.04
-Descargar ubuntu 20.04 desde la web oficial.
+Descargar Ubuntu 20.04 desde la web oficial.
 
-Crear usb de arranque con la aplicacion Etcher (www.etcher.io). Es necesario tener un pen drive de mas de 8GB.
+Descargar Ubuntu desde aqui: [https://ubuntu.com/](https://ubuntu.com/)
+Aqui os dejo las versiones de archivo: [https://releases.ubuntu.com/](https://releases.ubuntu.com/)
+
+Crear usb de arranque con la aplicacion Etcher ([www.etcher.io](www.etcher.io)). Es necesario tener un pen drive de mas de 8GB.
 
 Una vez tengamos el USB listo apagar macbook.
 
 Encender macbook air y pulsar tecla "alt" o "option" y esperar a que aparezcan los discos de arranque.
 Seleccionar EFI-BOOT. Si aparecen dos seleccionar el que este mas a la izquierda.
 
-Esperar a que arranque Ubuntu.
+Esperar a que arranque Ubuntu e  inslatarlo con el asistente, no es difícil.
 
-Inslatar ubuntu con el asistente, no tiene mas misterio.
-
-Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para /home seleccionarla tambien. Ambas en formato ext4.
+Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para `/home` seleccionarla tambien. Ambas en formato ext4.
 Existe un video que explica bastante bien los puntos anteriores: [https://www.youtube.com/watch?v=o30qsxv1CsM](https://www.youtube.com/watch?v=o30qsxv1CsM)
+
 ## Instalar Webcam facetimehd en Ubuntu 20.04
 
 ```
@@ -47,12 +49,15 @@ $ sudo modprobe -r bdc_pci
 $ sudo modprobe facetimehd
 ```
 
+Existe un gran articulo aquí: [https://florisvanbreugel.wordpress.com/2018/04/10/accessing-mac-webcam-in-ros-running-ubuntu-on-the-mac/](https://florisvanbreugel.wordpress.com/2018/04/10/accessing-mac-webcam-in-ros-running-ubuntu-on-the-mac/)
+
 Iré poniendo mas `hacks`...
 
 ## Teclado de mac en Ubuntu 20.04
 La distribucion del teclado de Ubuntu 20.04 no esta nada mal pero si te gusta mantener las combinaciones de teclas como los que estamos acostumbrados a `cmd + c` para copiar y `cmd + v` para pegar puedes ver estos sencillos pasos. Yo lo hice para, copiar, pegar, cortar, deshacer.
 
 Instalar `Autokey`: 
+
 ```sudo apt install autokey```
 
 Tengo la siguiente configuración: 
