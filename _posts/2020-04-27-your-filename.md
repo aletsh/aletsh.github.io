@@ -30,8 +30,7 @@ Esperar a que arranque Ubuntu.
 Inslatar ubuntu con el asistente, no tiene mas misterio.
 
 Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para /home seleccionarla tambien. Ambas en formato ext4.
-Existe un video que explica bastante bien los puntos anteriores: https://www.youtube.com/watch?v=o30qsxv1CsM
-
+Existe un video que explica bastante bien los puntos anteriores: [https://www.youtube.com/watch?v=o30qsxv1CsM](https://www.youtube.com/watch?v=o30qsxv1CsM)
 ## Instalar Webcam facetimehd en Ubuntu 20.04
 
 ```
