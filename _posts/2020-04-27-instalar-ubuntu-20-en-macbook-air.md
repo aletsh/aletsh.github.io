@@ -18,10 +18,10 @@ Opcionalmente, puedes crear una particion para `/home`.
 ## Crear USB de arranque e instalar Ubuntu 20.04
 Descargar Ubuntu 20.04 desde la web oficial.
 
-Descargar Ubuntu desde aqui: [https://ubuntu.com/](https://ubuntu.com/)
-Aqui os dejo las versiones de archivo: [https://releases.ubuntu.com/](https://releases.ubuntu.com/)
+* Descargar Ubuntu desde aqui: [https://ubuntu.com/](https://ubuntu.com/)
+* Aqui os dejo las versiones de archivo: [https://releases.ubuntu.com/](https://releases.ubuntu.com/)
 
-Crear usb de arranque con la aplicacion Etcher ([www.etcher.io](www.etcher.io)). Es necesario tener un pen drive de mas de 8GB.
+Crear usb de arranque con la aplicacion Etcher ([www.etcher.io](https://www.etcher.io)). Es necesario tener un pen drive de mas de 8GB.
 
 Una vez tengamos el USB listo apagar macbook.
 
