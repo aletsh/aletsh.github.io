@@ -11,11 +11,13 @@ Lista de anotaciones para tener Ubuntu en el Macbook air:
 4. Trackpad de mac en Ubuntu 20.04
 
 ## Crear particiones necesarias
+
 Crear particion con el disk utility en macOS para `swap` de 10gb por lo menos si tienes 8GB de ram y crear particion para `/`, yo lo hice de 20 GB. Tarda bastante en aplicar.
 
 Opcionalmente, puedes crear una particion para `/home`.
 
 ## Crear USB de arranque e instalar Ubuntu 20.04
+
 Descargar Ubuntu 20.04 desde la web oficial.
 
 * Descargar Ubuntu desde aqui: [https://ubuntu.com/](https://ubuntu.com/)
@@ -31,6 +33,7 @@ Seleccionar EFI-BOOT. Si aparecen dos seleccionar el que este mas a la izquierda
 Esperar a que arranque Ubuntu e  inslatarlo con el asistente, no es difícil.
 
 Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para `/home` seleccionarla tambien. Ambas en formato ext4.
+
 Existe un video que explica bastante bien los puntos anteriores:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o30qsxv1CsM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -69,15 +72,20 @@ Como se puede observar en la imagen he duplicado para todos los comandos lo mism
 Si alguien tiene una forma de tener la combinacion de mac en ubuntu más facil, que me lo diga por twitter (@aletsh), esta es la que encontré recientemente. Si encuentro una mejor la publico.
 
 ## Trackpad de mac en Ubuntu 20.04
+
 Instalar tweak:
+
 ``` sudo apt install tweak ```
 
 ### Activar boton derecho del trackpad del macbook air en Ubuntu 20.04
 Abrir `retoques`:
+
 En el menu de la izquierda seleccionar la opcion Teclado y Raton.
-A la derecha ir a la opcion `Emulación de la pulsación con el ratón`:
-Seleccionar: Area.
+
+A la derecha ir a la opcion `Emulación de la pulsación con el ratón`: Seleccionar: Area.
+
 ![tweak-01-alejandroguerrero-es]({{site.baseurl}}/img/tweak-01-alejandroguerrero-es.png)
 
 ### Activar gestos naturales como en macOS en Ubuntu 20.04
+
 `Todo: investigando... si sabeis como twiteame!!`
