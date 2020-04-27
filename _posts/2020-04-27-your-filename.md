@@ -24,3 +24,28 @@ Esperar a que arranque Ubuntu.
 Inslatar ubuntu con el asistente, no tiene mas misterio.
 Decir que la particion que hemos particionado antes para `swap` va a ser para el intercambio y la otra particion para `/` y si pusiste una particion para /home seleccionarla tambien. Ambas en formato ext4.
 Existe un video que explica bastante bien los puntos anteriores: https://www.youtube.com/watch?v=o30qsxv1CsM
+
+## Instalar Webcam facetimehd en Ubuntu 20.04
+
+```
+$ cd /etc/local/src
+$ git clone https://github.com/patjak/bcwc_pcie.git
+$ cd bcwc_pcie/firmware
+$ sudo make
+$ sudo make install
+$ cd ..
+$ sudo make
+$ sudo install
+$ sudo depmod
+$ sudo modprobe -r bdc_pci
+$ sudo modprobe facetimehd
+```
+
+Iré poniendo mas `hacks`...
+
+## Teclado de mac en Ubuntu 20.04
+La distribucion del teclado de Ubuntu 20.04 no esta nada mal pero si te gusta mantener las combinaciones de teclas como los que estamos acostumbrados a `cmd + c` para copiar y `cmd + v` para pegar puedes ver estos sencillos pasos. Yo lo hice para, copiar, pegar, cortar, deshacer.
+
+Instalar `Autokey`: 
+```sudo apt install autokey```
+
