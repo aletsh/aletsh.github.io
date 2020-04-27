@@ -49,3 +49,10 @@ La distribucion del teclado de Ubuntu 20.04 no esta nada mal pero si te gusta ma
 Instalar `Autokey`: 
 ```sudo apt install autokey```
 
+Tengo la siguiente configuración: 
+![autokey-alejandroguerrero-es-01]({{site.baseurl}}/img/autokey-alejandroguerrero-es-01.png)
+
+Como se puede observar en la imagen he duplicado para todos los comandos lo mismo.
+
+Si alguien tiene una forma de tener la combinacion de mac en ubuntu más facil, que me lo diga por twitter (@aletsh), esta es la que encontré recientemente. Si encuentro una mejor la publico.
+
