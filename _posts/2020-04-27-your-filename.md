@@ -79,4 +79,4 @@ Seleccionar: Area.
 ![tweak-01-alejandroguerrero-es]({{site.baseurl}}/img/tweak-01-alejandroguerrero-es.png)
 
 ### Activar gestos naturales como en macOS en Ubuntu 20.04
-`Todo: investigando...`
+`Todo: investigando... si sabeis como twiteame!!`
