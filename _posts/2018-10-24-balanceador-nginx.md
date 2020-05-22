@@ -1,17 +1,18 @@
 ---
+layout: post
 id: 71
 title: Reverse proxy con NGiNX
-date: 2018-10-24T19:00:00+00:00
+date: 'Wed Oct 24 2018 21:00:00 GMT+0200 (hora de verano de Europa central)'
 author: aletsh
-layout: post
-guid: http://alejandroguerrero.es/2018/10/24/balanceador-nginx/
+guid: 'http://alejandroguerrero.es/2018/10/24/balanceador-nginx/'
 permalink: /balanceador-nginx/
 categories:
-  - Uncategorized
+  - linux
 tags:
   - nginx
   - raspberry
   - reverse proxy
+published: true
 ---
 En este post explicaré brevemente la forma de acceder a las webs que esten alojadas en diferentes máquinas empleando el puerto HTTP/s (80 / 443).
 
