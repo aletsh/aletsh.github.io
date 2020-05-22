@@ -3,6 +3,12 @@ layout: post
 published: true
 title: Wifi para invitados en OpenWrt
 subtitle: Configuracion para habilitar una red Wifi para invitados en 3 comodos pasos.
+category:
+  - redes
+tags:
+  - wifi
+  - invitados
+  - openwrt
 ---
 ## Ingredientes
 - El router de conejillo de indias, yo uso un TP-Link TL-WR841N/ND v9
@@ -89,7 +95,3 @@ Reiniciar el router.
 Enjoy!
 
 :)
-
-
-
-
