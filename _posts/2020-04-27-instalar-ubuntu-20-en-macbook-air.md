@@ -3,6 +3,11 @@ layout: post
 published: true
 title: Instalar Ubuntu 20.04 en Macbook air (con dual boot)
 subtitle: Sencillos pasos para instalar ubuntu 20.04 en el MacBook Air sin perder macOS
+category:
+  - linux
+tags:
+  - ubuntu
+  - macbook air
 ---
 Lista de anotaciones para tener Ubuntu en el Macbook air:
 1. Crear particiones necesarias
