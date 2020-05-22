@@ -4,6 +4,12 @@ published: true
 title: Migrando de Wordpress a Jekyll
 date: '2019-05-31'
 subtitle: La manera mas fácil de hacer un blog
+category:
+  - blogging
+tags:
+  - wordpress
+  - jekyll
+  - migration
 ---
 ## ¿Porque?
 Como algunos sabreis el blog "con telas de araña" esta en una maquina (freenas) en mi casa desplegado en un Docker administrado via Rancher OS... y un largo bla bla bla...
