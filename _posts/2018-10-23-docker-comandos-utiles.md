@@ -1,15 +1,16 @@
 ---
+layout: post
 id: 70
 title: Docker comandos útiles
-date: 2018-10-23T13:56:05+00:00
+date: 'Tue Oct 23 2018 15:56:05 GMT+0200 (hora de verano de Europa central)'
 author: aletsh
-layout: post
-guid: http://alejandroguerrero.es/2018/10/23/docker-comandos-utiles/
+guid: 'http://alejandroguerrero.es/2018/10/23/docker-comandos-utiles/'
 permalink: /docker-comandos-utiles/
 categories:
   - Uncategorized
 tags:
   - docker
+published: true
 ---
 Acceso a una consola de Docker desde la terminal:
 
