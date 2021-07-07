@@ -117,15 +117,15 @@ Para ello hay que descargarse un parche y aplicarlo:
 
 Editar el archivo de configuración `/etc/ddclient.conf`:
 
-  nano /etc/ddclient.conf
-  ssl=yes 
-  use=web, 
-  web=dyndns 
-  protocol=cloudflare, 
-  server=www.cloudflare.com, 
-  zone=tudominio.com, 
-  login=TUEMAIL@foo.com
-  password=TU-API-DE-CLOUDFLARE TU-SUPER-DOMINIO.com
+    nano /etc/ddclient.conf
+    ssl=yes 
+    use=web, 
+    web=dyndns 
+    protocol=cloudflare, 
+    server=www.cloudflare.com, 
+    zone=tudominio.com, 
+    login=TUEMAIL@foo.com
+    password=TU-API-DE-CLOUDFLARE TU-SUPER-DOMINIO.com
 
 Para saber la API de cloudflare tendremos que acceder a nuestro perfil de cloudflare y bajar la pagina hasta que encontremos la generacion de la API KEY.
 
