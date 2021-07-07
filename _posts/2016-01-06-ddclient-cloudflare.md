@@ -18,6 +18,8 @@ tags:
   - no-ip
 published: true
 ---
+## Introducción tostonazo
+
 Si eres de esos que tiene algún servicio de red en casa el cual quieres mantener desde fuera, seguramente habrás empleado un nombre de dominio ya que la IP de tu casa va cambiando bastante a menudo.
 
 Bien para eso se inventó las DNS Dinamicas que ya sabréis; no-ip.org, dyndns etc. Lo malo de estas es que si no quieres pagar te dan un nombre de dominio propio que a veces es un poco engorroso pero a la vez cómodo.
@@ -30,19 +32,19 @@ No voy a postear un tutorial solo un listado de cosas que hacer ya que el tutori
 
 Para proceder necesitaremos crearnos una cuenta en namecheap.com y comprar o que nos transfieran un dominio, en su lugar algun amiguete que tenga vuestro dominio os puede dar permisos para poder administrarlo y que pague él 😉
 
-## Instalar DDClient {#instalarddclient}
+## Instalar DDClient 
 
 `apt-get update && apt-get install ddclient`
 
-## Parar DDClient {#pararddclient}
+## Parar DDClient
 
 `service ddclient stop # /etc/init.d/ddclient stop`
 
-## Ejecutar DDClient {#ejecutarddclient}
+## Ejecutar DDClient 
 
 `service ddclient start # /etc/init.d/ddclient start`
 
-## Reiniciar DDClient {#reiniciarddclient}
+## Reiniciar DDClient 
 
 `service ddclient restart {forze-restart} # /etc/init.d/ddclient restart {forze-restart}`
 
@@ -58,12 +60,9 @@ Para hacer una prueba cambiaremos desde el panel de DNS la IP. Le podemos poner 
 
 Una vez cambiado vamos a proceder a ejecutar ddclient y ver si la configuración es correcta.
 
-1. Paramos el servicio service:
-`ddclient stop`
-2. Borramos la cache de DDClient 
-`rm /var/cache/ddclient/ddclient.cache` 
-3. Arrancamos el servicio de nuevo
-`service ddclient start`
+1. Paramos el servicio service: `ddclient stop`
+2. Borramos la cache de DDClient: `rm /var/cache/ddclient/ddclient.cache` 
+3. Arrancamos el servicio de nuevo: `service ddclient start`
 
 Podemos tener en un terminal el $tail ejecutandose y realizar la operacion anterior y veremos algo parecido a este log:
 
@@ -73,11 +72,13 @@ De lo contrario aparecerá de esta manera (ejemplo de mal host):
 
 `Jan 6 20:08:05 px ddclient[324059]: FAILED: updating @: Invalid reply.`
 
+## Borrar cache DDClient
+
 Para realizar pruebas siempre recomiendo borrar la cache de ddclient y emplear la ejecucion manual:
 
 `rm /var/cache/ddclient.cache ddclient -daemon=0 -debug -verbose -noquiet`
 
-# ddclient para CloudFlare {#ddclientparacloudflare}
+# ddclient para CloudFlare
 
 Vamos a configurar ddclient para actualizar la ip tal y como si fuese un DDNS pero esta vez para cloudflare.
 
@@ -85,35 +86,38 @@ Si ya tienes una cuenta en CloudFlare continua leyendo 😉
 
 Si no tienes _ddclient_ instalado, instálalo y a la ultima version 3.9.1 (update 3.8.x a 3.9.1);
 
-`sudo apt install libio-socket-ssl-perl \
+    sudo apt install libio-socket-ssl-perl \
     libio-socket-inet6-perl \
     libjson-pp-perl \
     libdata-validate-ip-perl \
-    ddclient`
+    ddclient
 
-`sudo dpkg-reconfigure ddclient` 
+    sudo dpkg-reconfigure ddclient
 
 Descargar la version 3.9.1 desde Sourceforge:
-`wget https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz \
+
+    wget https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz \
     && tar -xvf ddclient-* \
-    && cd ddclient-*/ && ls -alh`
+    && cd ddclient-*/ && ls -alh
     
 Reemplazar la version antigua con la nueva:
-`sudo cp -f ddclient /usr/sbin/ddclient`
+
+    sudo cp -f ddclient /usr/sbin/ddclient
 
 Actualiza el archivo ddclient.conf con la nueva version:
-`sudo mkdir /etc/ddclient \
-    && mv /etc/ddclient.conf /etc/ddclient/`
+
+    sudo mkdir /etc/ddclient \
+    && mv /etc/ddclient.conf /etc/ddclient/
 
 Mira si existe algún cache en el directorio `_/var/cache/ddclient_` si es así bórralo.
 
-`rm /var/cache/ddclient.cache`
+    rm /var/cache/ddclient.cache
 
 Hay que instalar un parche para que el parámetro ‘_protocol_‘ que va dentro del _ddclient.conf_ acepte ‘_cloudflare_‘ como valor.
 
 Para ello hay que descargarse un parche y aplicarlo:
 
-`sudo apt-get install curl libjson-any-perl libio-socket-ssl-perl curl -O <http://blog.peter-r.co.uk/uploads/ddclient-3.8.0-cloudflare-22-6-2014.patch> sudo patch /usr/sbin/ddclient < ddclient-3.8.0-cloudflare-22-6-2014.patch`
+    sudo apt-get install curl libjson-any-perl libio-socket-ssl-perl curl -O http://blog.peter-r.co.uk/uploads/ddclient-3.8.0-cloudflare-22-6-2014.patch sudo patch /usr/sbin/ddclient < ddclient-3.8.0-cloudflare-22-6-2014.patch
 
 Editar el archivo de configuración `/etc/ddclient.conf`:
 
