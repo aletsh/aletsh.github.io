@@ -115,17 +115,17 @@ Para ello hay que descargarse un parche y aplicarlo:
 
 `sudo apt-get install curl libjson-any-perl libio-socket-ssl-perl curl -O <http://blog.peter-r.co.uk/uploads/ddclient-3.8.0-cloudflare-22-6-2014.patch> sudo patch /usr/sbin/ddclient < ddclient-3.8.0-cloudflare-22-6-2014.patch`
 
-Editar el archivo de configuración ‘_/etc/ddclient.conf’_:
+Editar el archivo de configuración `/etc/ddclient.conf`:
 
-`nano /etc/ddclient.conf
-ssl=yes 
-use=web, 
-web=dyndns 
-protocol=cloudflare, 
-server=www.cloudflare.com, 
-zone=tudominio.com, 
-login=TUEMAIL@foo.com
-password=TU-API-DE-CLOUDFLARE TU-SUPER-DOMINIO.com`
+  nano /etc/ddclient.conf
+  ssl=yes 
+  use=web, 
+  web=dyndns 
+  protocol=cloudflare, 
+  server=www.cloudflare.com, 
+  zone=tudominio.com, 
+  login=TUEMAIL@foo.com
+  password=TU-API-DE-CLOUDFLARE TU-SUPER-DOMINIO.com
 
 Para saber la API de cloudflare tendremos que acceder a nuestro perfil de cloudflare y bajar la pagina hasta que encontremos la generacion de la API KEY.
 
@@ -153,11 +153,11 @@ Comprobamos que el servicio funciona:
 
 `service ddclient start # /etc/init.d/ddclient start`
 
-## Bibliografía: {#bibliografa}
+## Bibliografía:
 
-  * ddclient 3.9.1: https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/installing-latest-ddclient
-  * ddclient cloudflare: https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/cloudflare-dns
-  * ccclient 3.9.1 Release: https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz 
+  * ddclient 3.9.1: <https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/installing-latest-ddclient>
+  * ddclient cloudflare: <https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/cloudflare-dns>
+  * ccclient 3.9.1 Release: <https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz>
   * <http://sourceforge.net/p/ddclient/wiki/Home/>
   * <https://www.namecheap.com/support/knowledgebase/article.aspx/583/11/how-do-i-configure-ddclient>
   * <https://www.cloudflare.com/resources-downloads/>
