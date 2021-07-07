@@ -60,7 +60,6 @@ Una vez cambiado vamos a proceder a ejecutar ddclient y ver si la configuración
 
 1. Paramos el servicio service:
 `ddclient stop`
-
 2. Borramos la cache de DDClient 
 `rm /var/cache/ddclient/ddclient.cache` 
 3. Arrancamos el servicio de nuevo
@@ -76,7 +75,7 @@ De lo contrario aparecerá de esta manera (ejemplo de mal host):
 
 Para realizar pruebas siempre recomiendo borrar la cache de ddclient y emplear la ejecucion manual:
 
-`rm /var/cache/ddclient.cache ddclient -daemon=0 -debug -verbose -noquiet</p>`
+`rm /var/cache/ddclient.cache ddclient -daemon=0 -debug -verbose -noquiet`
 
 # ddclient para CloudFlare {#ddclientparacloudflare}
 
@@ -84,9 +83,27 @@ Vamos a configurar ddclient para actualizar la ip tal y como si fuese un DDNS 
 
 Si ya tienes una cuenta en CloudFlare continua leyendo 😉
 
-Si no tienes _ddclient_ instalado, instálalo;
+Si no tienes _ddclient_ instalado, instálalo y a la ultima version 3.9.1 (update 3.8.x a 3.9.1);
 
-`apt-get update && apt-get install ddclient`
+`sudo apt install libio-socket-ssl-perl \
+    libio-socket-inet6-perl \
+    libjson-pp-perl \
+    libdata-validate-ip-perl \
+    ddclient`
+
+`sudo dpkg-reconfigure ddclient` 
+
+Descargar la version 3.9.1 desde Sourceforge:
+`wget https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz \
+    && tar -xvf ddclient-* \
+    && cd ddclient-*/ && ls -alh`
+    
+Reemplazar la version antigua con la nueva:
+`sudo cp -f ddclient /usr/sbin/ddclient`
+
+Actualiza el archivo ddclient.conf con la nueva version:
+`sudo mkdir /etc/ddclient \
+    && mv /etc/ddclient.conf /etc/ddclient/`
 
 Mira si existe algún cache en el directorio `_/var/cache/ddclient_` si es así bórralo.
 
@@ -138,6 +155,9 @@ Comprobamos que el servicio funciona:
 
 ## Bibliografía: {#bibliografa}
 
+  * ddclient 3.9.1: https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/installing-latest-ddclient
+  * ddclient cloudflare: https://strangebutohwell.gitbook.io/knowledge/linux/applications/ddclient/cloudflare-dns
+  * ccclient 3.9.1 Release: https://sourceforge.net/projects/ddclient/files/ddclient/ddclient-3.9.1/ddclient-3.9.1.tar.gz 
   * <http://sourceforge.net/p/ddclient/wiki/Home/>
   * <https://www.namecheap.com/support/knowledgebase/article.aspx/583/11/how-do-i-configure-ddclient>
   * <https://www.cloudflare.com/resources-downloads/>
