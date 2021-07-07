@@ -133,7 +133,7 @@ Editar el archivo de configuración `/etc/ddclient.conf`:
 
 Para saber la API de cloudflare tendremos que acceder a nuestro perfil de cloudflare y bajar la pagina hasta que encontremos la generacion de la API KEY.
 
-Para probar nuestra configuración lo que voy hacer va a ser editar mi IP de cloudflare, lo pondré apuntando a 99.99.99.99
+Para probar nuestra configuración lo que voy hacer va a ser editar mi IP de cloudflare, lo pondré apuntando a `99.99.99.99`
 
 Ahora ejecutaremos nuestro `ddclient` de forma manual, mas abajo se describe como ponerlo en modo automático (demonio o daemon):
 
